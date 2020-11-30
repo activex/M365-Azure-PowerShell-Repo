@@ -4,7 +4,7 @@
 # Original Script by Elliot Munro - https://gcits.com/
 # Adapted to to work with individual tenants by removing partner onlt cmd-lets
 #
-# Output at:  C:\temp\ExternalEmailForward_yyyy-mm-dd.csv
+# Output at:  C:\temp\yyyymmdd_ExternalForward.csv
 #
 # v0.1 - 30-11-2020 - Modern Auth, removed customer* fields in output, added date to filename
 #
