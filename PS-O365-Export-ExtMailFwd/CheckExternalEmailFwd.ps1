@@ -1,10 +1,11 @@
 ﻿# 
 # Check for External Email Forwarding and Export to File.
 #
+# Latest Version @ https://github.com/activex/O365-Azure-PowerShell-Repo
+#
 # Original Script by Elliot Munro - https://gcits.com/
 # Adapted to to work with individual tenants by removing partner onlt cmd-lets
 #
-# Run in admin powershell
 # For Modern Auth Requires: Install-Module –Name ExchangeOnlineManagement
 #
 # Output at:  C:\temp\yyyymmdd_ExternalForward.csv
