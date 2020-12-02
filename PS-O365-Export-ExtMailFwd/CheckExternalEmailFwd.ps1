@@ -4,13 +4,18 @@
 # Original Script by Elliot Munro - https://gcits.com/
 # Adapted to to work with individual tenants by removing partner onlt cmd-lets
 #
-# Output at:  C:\temp\yyyymmdd_ExternalForward.csv
+# Run in admin powershell
+# For Modern Auth Requires: Install-Module –Name ExchangeOnlineManagement
 #
-# v0.1 - 30-11-2020 - Modern Auth, removed customer* fields in output, added date to filename
+# Output at:  C:\temp\yyyymmdd_ExternalForward.csv
+# 
+# v0.2 - 03-12-2020 - Removed basic auth, ExchangeOnlineManagement, cleaned formatting
+# v0.1 - 30-11-2020 - Removed customer* fields in output, added date to filename
 #
 
-Connect-MsolService
     Write-Host "Connecting..."
+    Connect-ExchangeOnline
+
     Write-Host "Checking..."
     $mailboxes = $null
     $mailboxes = Get-Mailbox -ResultSize Unlimited
